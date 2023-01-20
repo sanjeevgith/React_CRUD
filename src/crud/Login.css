@@ -1,0 +1,67 @@
+.containerl{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    background-image: url("https://dev.honohr.com/assets/img/dev_aakashbanner.jpg");
+    width: 1400px;
+    height: 635px;
+}
+
+form{
+    padding: 10px;
+    background-color:white;
+    border-radius: 10px;
+}
+label{
+    color: rgb(73, 72, 72);
+    font-size: larger;
+}
+.linkbar{
+    text-align: right;
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    
+}
+
+
+.cardheader {
+    background-color:rgb(98, 169, 183);
+   
+ }
+ .heardername{
+    padding: 15px;
+    text-align: center;
+    color: aliceblue;
+
+ }
+
+
+
+.subbtn{
+    text-align: center;
+
+}
+
+.signuplink{
+    color: rgb(140, 147, 105);
+    font-size: small;
+}
+
+
+ 
+ button{
+    background-color:rgb(115, 183, 242) ;
+    height: 40px;
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+ }

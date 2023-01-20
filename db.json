@@ -1,0 +1,35 @@
+{
+  "employee": [
+    {
+      "empid": 1,
+      "name": "demo",
+      "email": "demo@gmail.com",
+      "phone": "38162936982",
+      "active": true,
+      "id": 1
+    },
+    {
+      "name": "sagysgfuyas",
+      "email": "advasuf@gmail.com",
+      "phone": "761378612731",
+      "active": true,
+      "id": 2
+    }
+  ],
+  "signup": [
+    {
+      "email": "monto@gmail.com",
+      "password": "123456",
+      "name": "monto",
+      "phone": "768768686",
+      "id": 2
+    },
+    {
+      "email": "sanjiv@gmail.com",
+      "password": "12345",
+      "name": "sanjiv",
+      "phone": "57658758",
+      "id": 3
+    }
+  ]
+}
