@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import CryptoJS from "crypto-js";
 import './Login.css';
 
 function Login() {
@@ -8,6 +8,9 @@ function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("");
     const [response, setResponse] = useState({})
+
+    const [dataen, setEncrptedData] = useState("");
+    const [text, setText] = useState("");
 
     console.log('email', email)
     console.log('password', password)
@@ -21,8 +24,21 @@ function Login() {
             console.log(response[i]);
 
             if (email == response[i].email && password == response[i].password) {
-                // alert("hum jeet gaye")
-                navigate('/dashboard')
+
+                const secretPass = "XkhZG4fW2t2W";
+                const dataen = CryptoJS.AES.encrypt(
+                    JSON.stringify(text),
+                    secretPass
+                ).toString();
+
+                setEncrptedData(dataen);
+                console.log(dataen);
+                sessionStorage.setItem("token",dataen);
+                
+                if(dataen){
+                    navigate('/dashboard')
+                }
+                
             }
         }
 
@@ -40,6 +56,9 @@ function Login() {
                 console.log(err.message)
             })
     })
+
+
+
 
 
     return (

@@ -1,5 +1,7 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useState } from "react";
+
+import { BrowserRouter, Route, Routes ,useNavigate} from 'react-router-dom';
 import EmpListing from './crud/EmpListing';
 import EmpCreate from './crud/EmpCreate';
 import EmpDetails from './crud/EmpDetails';
@@ -7,10 +9,15 @@ import EmpEdit from './crud/EmpEdit';
 import SignUp from './crud/SignUp';
 import Login from './crud/Login';
 
+
 function App() {
+
+
+
   return (
+
+    
     <div className="App">
-      {/* <h1>React JS App</h1> */}
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Login />}></Route>

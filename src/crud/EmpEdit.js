@@ -44,8 +44,8 @@ export default function EmpEdit(){
     }
 
     return(
-        <div>
-        <div className="row">
+        
+        <div className="row" >
             <div className="offset-lg-3 col-lg-6">
                 <form className="container" onSubmit={handlesubmit}>
                     <div className="card" style={{"textAlign":"left"}}>
@@ -56,13 +56,7 @@ export default function EmpEdit(){
                         <div className="card-body">
 
                             <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="form-group">
-                                        <label>ID</label>
-                                        <input value={empid} disabled="disabled" className="form-control"></input>
-                                    </div>
-                                </div>
-
+                               
                                 <div className="col-lg-12">
                                     <div className="form-group">
                                         <label>Name</label>
@@ -99,6 +93,7 @@ export default function EmpEdit(){
                 </form>
             </div>
         </div>
-    </div>
+    
+   
     );
 }

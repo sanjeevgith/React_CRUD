@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 export default function EmpCreate(){
-
-    const [id, idchange] = useState("");
-    const [name, namechange] = useState("");
-    const [email, emailchange] = useState("");
-    const [phone, phonechange] = useState("");
-    const [active, activechange] = useState(true);
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [active, setActive] = useState(true);
     const navigate = useNavigate();
 
     const handlesubmit=(e)=>{
@@ -38,34 +36,28 @@ export default function EmpCreate(){
                             <div className="card-body">
 
                                 <div className="row">
-                                    {/* <div className="col-lg-12">
-                                        <div className="form-group">
-                                            <label>ID</label>
-                                            <input value={id} disabled="disabled" className="form-control"></input>
-                                        </div>
-                                    </div> */}
 
                                     <div className="col-lg-12">
                                         <div className="form-group">
                                             <label>Name</label>
-                                            <input required value={name} onChange={e=>namechange(e.target.value)} className="form-control"></input>
+                                            <input required value={name} onChange={e=>setName(e.target.value)} className="form-control"></input>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
                                         <div className="form-group">
                                             <label>Email</label>
-                                            <input required value={email} onChange={e=>emailchange(e.target.value)} className="form-control"></input>
+                                            <input required value={email} onChange={e=>setEmail(e.target.value)} className="form-control"></input>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
                                         <div className="form-group">
                                             <label>Phone</label>
-                                            <input required value={phone} onChange={e=>phonechange(e.target.value)} className="form-control"></input>
+                                            <input required value={phone} onChange={e=>setPhone(e.target.value)} className="form-control"></input>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
                                         <div className="form-check">
-                                            <input checked={active} onChange={e=>activechange(e.target.checked)} type="checkbox" className="form-check-input"></input>
+                                            <input checked={active} onChange={e=>active(e.target.checked)} type="checkbox" className="form-check-input"></input>
                                             <label className="form-check-label">Is Active</label>
                                         </div>
                                     </div>

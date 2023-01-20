@@ -2,7 +2,7 @@
   "employee": [
     {
       "empid": 1,
-      "name": "demo",
+      "name": "demoupdate",
       "email": "demo@gmail.com",
       "phone": "38162936982",
       "active": true,
@@ -14,6 +14,13 @@
       "phone": "761378612731",
       "active": true,
       "id": 2
+    },
+    {
+      "name": "sanju",
+      "email": "sanju@gmail.com",
+      "phone": "861873623",
+      "active": true,
+      "id": 3
     }
   ],
   "signup": [
@@ -30,6 +37,13 @@
       "name": "sanjiv",
       "phone": "57658758",
       "id": 3
+    },
+    {
+      "email": "demo@gmail.com",
+      "password": "1234",
+      "name": "demo",
+      "phone": "2312312",
+      "id": 4
     }
   ]
 }

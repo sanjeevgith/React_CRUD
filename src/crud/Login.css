@@ -5,6 +5,8 @@
     background-image: url("https://dev.honohr.com/assets/img/dev_aakashbanner.jpg");
     width: 1400px;
     height: 635px;
+    background-size: 1400px 800px;
+    
 }
 
 form{
