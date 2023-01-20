@@ -5,7 +5,7 @@ import './Navbar.css';
 
 function Navbar() {
 
-
+     setTimeout(function() { sessionStorage.clear(); }, (2 * 60 * 1000));
 
     function Logout(){
         sessionStorage.clear();

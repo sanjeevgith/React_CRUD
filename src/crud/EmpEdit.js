@@ -16,12 +16,19 @@ export default function EmpEdit(){
         fetch("http://localhost:3000/employee/"+id).then((res) => {
             return res.json();
         }).then((resp) => {
+            var token = sessionStorage.getItem("token")
+            console.log(token);
+            if (token == "" || token == null) {
+                navigate('/')
+
+            }else{
             console.log(resp)
             idchange(resp.id);
             namechange(resp.name);
             emailchange(resp.email);
             phonechange(resp.phone);
             activechange(resp.active)
+            }
         }).catch((err) => {
             console.log(err)
         })

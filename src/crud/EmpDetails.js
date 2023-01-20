@@ -1,18 +1,25 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, useNavigate ,useParams} from "react-router-dom";
 
 export default function EmpDetails(){
     const{id}=useParams();
 
     const [employee, setemploye] = useState({})
 
+    const navigate = useNavigate();
+
     useEffect(() => {
         fetch("http://localhost:3000/employee/"+id).then((res) => {
             return res.json();
         }).then((resp) => {
+            var token = sessionStorage.getItem("token")
+            console.log(token);
+            if (token == "" || token == null) {
+                navigate('/')
+            }else{
             //assim, a variavel employee é populada
             setemploye(resp);
+            }
         }).catch((err) => {
             console.log(err)
         })

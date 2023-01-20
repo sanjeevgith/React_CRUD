@@ -1,26 +1,18 @@
 {
   "employee": [
     {
-      "empid": 1,
-      "name": "demoupdate",
-      "email": "demo@gmail.com",
-      "phone": "38162936982",
-      "active": true,
-      "id": 1
-    },
-    {
-      "name": "sagysgfuyas",
-      "email": "advasuf@gmail.com",
-      "phone": "761378612731",
-      "active": true,
-      "id": 2
-    },
-    {
       "name": "sanju",
       "email": "sanju@gmail.com",
       "phone": "861873623",
       "active": true,
       "id": 3
+    },
+    {
+      "name": "monto",
+      "email": "syafsyf@gmail.com",
+      "phone": "8768786123",
+      "active": true,
+      "id": 4
     }
   ],
   "signup": [
